@@ -101,8 +101,8 @@ int main(int argc, char** argv) {
                         break;
                         //caso per la divisione con il resto
                     case 4: 
-                        q = quoziente((int)a, (int)b);
-                        f = frazionale((int)a, (int)b);
+                        risultato = risultato((int)a, (int)b);
+                        git = git((int)a, (int)b);
                         printf("%f/%f= %d (intera) e %f (frazionale)\n", a, b, q, f);
                         break;
                         //caso per l'addizione
