@@ -101,6 +101,7 @@ int main(int argc, char** argv) {
                         break;
                         //caso per la divisione con il resto
                     case 4: 
+                        risultato = divisioneconresto (a, b);
                         risultato = risultato((int)a, (int)b);
                         git = git((int)a, (int)b);
                         printf("%f/%f= %d (intera) e %f (frazionale)\n", a, b, q, f);
