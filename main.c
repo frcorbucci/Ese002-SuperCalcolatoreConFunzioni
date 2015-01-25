@@ -91,7 +91,7 @@ int main(int argc, char** argv) {
                         break;
                         //caso per la divisione
                     case 2:
-                        divisione = prodotto(a, b);
+                        risultato = divisione(a, b);
                         printf("%f/%f=%f\n", a, b, risultato);
                         break;
                         //caso per la potenza
