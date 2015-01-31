@@ -1,68 +1,52 @@
-//funzione per la addizione
-int somma (int a, int b)
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "MiaLibreria.h"
+
 {
-    int risultato;//variabile utilizzato come accumulatore per il risultato
-    
     risultato = a + b;//formula
     
     return risultato;
 }
-//funzione per la sottrazione
-int differenza (int a, int b)
+
 {
-    int risultato;//variabile utilizzato come accumulatore per il risultato
-    
     risultato = a - b;//formula
     
     return risultato;
 }
-//funzione per la moltiplicazione
-int prodotto (int a, int b)
+
 {
-    int risultato;//variabile utilizzato come accumulatore per il risultato
-    
+ 
     risultato = a * b;//formula
     
     return risultato;
 }
-//funzione per la divisione senza resto
-float divisione (float a, float b)
+
 {
-    float risultato;//variabile utilizzato come accumulatore per il risultato
+ 
+    topolino = a / b;//formula
     
-    risultato = a / b;//formula
-    
-    return risultato;   
+    return topolino;   
 }
-//funzione per l'elavazione a potenza
-int potenza (int a, int b)
+
 {
-    //
-    int risultato=1;//variabile utilizzato come accumolatore dei risultati ottenuti
-    int q=0;//variabile per contare l'esponente
-    
+ 
     //è stato utilizzato il ciclo while per moltiplicare la base (a) per quanto è grande l'esponente (q+1; b-1)
     while (q<b) 
     {
-                risultato*=a;
+                ciccio*=a;
                 q++;
-
     }
-    
-    return risultato;
+    return ciccio;
 }
-//funzione per la divisione con il resto
-float divisioneconresto (int a, int b)
-{
-      //variabili
-      float risultato;//variabile utilizzato come accumulatore per il risultato e per il resto
-      int git;//variabili utilizzata come risultato intero senz aresto
-      
-      risultato= (float) a/b;
-      git= (int) a/b;
-      risultato= (float) risultato - git;
 
-      return risultato;     
+{
+    
+      pippo= (float) a/b;
+      git= (int) a/b;
+      risultato= (float) pippo - git;
+
+      return pippo;     
 }
 
 int main(int argc, char** argv) {
@@ -71,6 +55,7 @@ int main(int argc, char** argv) {
     int operazione;
     float risultato, f;
     int q;
+    
     
  //inizio del programma (accoglienza verso l'utente)
         printf("\nInserire primo opeando (a): ");  
@@ -91,7 +76,7 @@ int main(int argc, char** argv) {
                         break;
                         //caso per la divisione
                     case 2:
-                        divisione = prodotto(a, b);
+                        risultato = divisione(a, b);
                         printf("%f/%f=%f\n", a, b, risultato);
                         break;
                         //caso per la potenza
